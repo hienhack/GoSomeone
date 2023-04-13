@@ -1,0 +1,36 @@
+#read-more-profile {
+    width: fit-content;
+}
+
+.img-view {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-imgs img {
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    height: 250px;
+}
+
+.img-view img {
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.img-view {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

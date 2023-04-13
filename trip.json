@@ -1,0 +1,124 @@
+{
+    "_id": 1223123,
+    "title": "adsf sdsdf asdf asdf",
+    "img": [
+        "https://asfsdafasdfsdf.jpeg",
+        "https://asfsdafasdfsdfjwier.jpg",
+        "https://asfsdafasdfsdf.png"
+    ],
+    "type": "guided",
+    "dep_date": "Này là ngày khởi hành",
+    "duration": 4,
+    "location": "Vietnam",
+    "price": 1000000,
+    "category": ["nature", "culture"],
+    "accommodation": ["homestay", "hostel"],
+    "description": "dfdasf ádfasd fasd fsad fasdf ádf ád f",
+    "host": 2321, // nay là id của người tạo
+    "total_tripmates": 6,
+    "tripmates": [2221, 2342, 234],
+    "total_stop": 3,
+    "itinerary": [
+        {
+            "no": 1,
+            "img": "https://fdsfads.png",
+            "content": "On our first day, we will go to see Burj Khalifa in the evening and watch the light show at the Dubai"
+        },
+        {
+            "no": 2,
+            "img": "https://fdsfadsdfsasd.jpg",
+            "content": "Oadsfasdfas n the evening and watch the light show at the Dubai"
+        },
+        {
+            "no": 4,
+            "img": "https://fdsfadfsdafsdjhjhjdsdfsasd.jpg",
+            "content": "Oadsfasdfas n the evening and watch the light show at the Dubai"
+        }
+    ],
+    "included": {
+        "accommodation": true,
+        "ticket": true,
+        "transportation": true
+    }
+}
+
+{
+    "_id": 123213,
+    "first_name": "Hien", 
+    "last_name": "Thai", 
+    "username": "absdfds", 
+    "password": "7easf3rw7r923rnsihetiawe...", 
+    "dob": "...", 
+    "email": "hientahi@gmail.com", 
+    "phone_number": "088343241", 
+    "user_id": ,
+    "verification": {
+        "phone": false,
+        "identity": false,
+    }
+    "profile": {
+        "ava": "https://dsfadsf.png",
+        "cover_img": "https://dfasdfadsfdv.jpeg",
+        "imgs": [
+            "https://dsfdasfadsf.jpeg",
+            "https://dsfdasfadsfyouy.jpeg",
+            "https://dsfdasfadsfwernmnm.jpg",
+        ],
+        "bio": "asdfsadfad asdfsd",
+        "description": "sdfasdf FafDS",
+        "q1": "asdfsdfasf adfasdfasdf",
+        "q2": "asdfsdfasf adfasdfasdf",
+        "q3": "asdfsdfasf adfasdfasdf",
+        "q4": "asdfsdfasf adfasdfasdf"
+    },
+
+    "notification": [
+        {
+            "type": "request",
+            "trip_id": "1232andasf",
+            "result": ""
+        },
+        {
+            "type": "response",
+            "trip_id": "132naf",
+            "result": "accepted"
+        }
+    ]
+}
+
+jointrip
+{
+    {
+        "user_id": "3432dasff34",
+        "trip_id": "sdfsd",
+        "state": "confirming"
+    },
+    {
+        "user_id": "3432dasff3498234klansdlkf",
+        "trip_id": "sdfsd234",
+        "state": "requesting"
+    },
+    {
+        "user_id": "9812ff34",
+        "trip_id": "sdfsd234qfadfvvsa",
+        "state": "joined"
+    },
+    {
+        "user_id": "asdjfo",
+        "trip_id": "sdfsd39123983234qfadf",
+        "state": "finished"
+    }
+}
+
+
+usertrip
+{
+    "user_id": "asd213asf",
+    "trip_id": "afdfasd34832",
+    "state": "confirming"
+}
+
+"state" thuộc tập { "requesting", "confirming", "joined", "finished" }
+Khi gửi yêu xong cầu thì set giá trị là requesting
+Khi được chấp nhận thì set giá trị là confirming
+Khi được accept thì set giá trị là 

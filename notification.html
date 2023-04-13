@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/8a19b96b6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid header header-white">
+        <div class="container-xl header-container p-0">
+            <div class="logo">
+                <a href="/"><img src="./assets/logo_w.png"></a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">join a trip</a>
+                </div>
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">lead a trip</a>
+                </div>
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">how it works</a>
+                </div>
+                <img class="user-icon" src="./assets/user.png">
+            </div>
+        </div>
+    </header>
+    <!--  -->
+    <div class="container-fluid wrapper" style="background-color: #f8f4f4;">
+        <div id="my-trip" class="container-lg p-0 my-5">
+            <h4 class="fw-bold mb-4">Notifications</h4>
+            <div class="d-flex flex-column gap-1 w-100">
+                <div class="rounded-1 bg-light shadow-sm">
+                    <div class="d-flex p-2 gap-3 align-items-center">
+                        <a class="d-block" href="/profile.html">
+                            <div class="user d-flex align-items-center border-end border-1 pe-3">
+                                <img class="d-block" src="./assets/user.png">
+                                <h6 class="name text-dark m-0">Waldez</h6>
+                            </div>
+                        </a>
+                        <a href="/tripview.html">
+                            <h6 class="fs-8 text-muted m-0">
+                                Requested to join your trip, please go to your trip and respond to this
+                                request.
+                            </h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="rounded-1 bg-light shadow-sm p-3">
+                    <h6 class="fs-8 text-muted m-0">
+                        <span>Your request to join <a class="text-dark fw-semibold"
+                                href="/tripview.html">{{tripname}}</a> was accepted by the host.
+                            Go and see the next steps.</span>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <footer class="container-fluid p-0">
+        <div class="footer-info">
+            <div class="container-xl p-0">
+                <div class="row gx-5">
+                    <div class="col-3 control">
+                        <h6 class="title">Travel</h6>
+                        <a href="#">Join a trip</a>
+                        <a href="#">Lead a trip</a>
+                        <a href="#">How it works</a>
+                    </div>
+                    <div class="col-3 control">
+                        <h6 class="title">GoSomeone</h6>
+                        <a href="#">About us</a>
+                        <a href="#">Payment</a>
+                    </div>
+                    <div class="col-3 control">
+                        <h6 class="title">Support</h6>
+                        <a href="#">Help & FAQ</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Responsibilities</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container-xl footer-container p-0">
+                <h6>2022&nbsp;<i class="fa-solid fa-at"></i>&nbsp;GOSOMEONE</h6>
+                <div>
+                    <a class="ps-2"><img class="icon" src="./assets/facebook.png"></a>
+                    <a class="ps-2"><img class="icon" src="./assets/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/standard.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+</body>

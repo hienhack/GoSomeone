@@ -1,0 +1,18 @@
+.bg-white {
+    background-color: white;
+}
+
+.filter-btn.active {
+    background-color: rgb(5, 182, 182) !important;
+    color: white !important;
+    outline: none !important;
+}
+
+.request .user img {
+    height: 40px;
+    width: 40px;
+}
+
+.request button {
+    height: 2em;
+}

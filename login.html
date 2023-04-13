@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/standard.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/8a19b96b6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid header header-white">
+        <div class="container-xl header-container p-0">
+            <div class="logo">
+                <a href="/"><img src="./assets/logo_w.png"></a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">join a trip</a>
+                </div>
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">lead a trip</a>
+                </div>
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">how it works</a>
+                </div>
+                <img class="user-icon" src="./assets/user.png">
+            </div>
+        </div>
+    </header>
+    <!-- intro search -->
+    <div class="container-fluid p-5 h-100 wrapper">
+        <div class="container-sm p-4 login-signup-form">
+            <h5 class="mb-4"><b>Log in</b></h5>
+            <button id="google-login" class="border"><i class="fa-brands fa-google float-start"></i>Continue
+                with Google</button>
+            <h6><i>- or -</i></h6>
+            <form>
+                <div class="w-100 input">
+                    <input type="text" name="username" placeholder="Username or Email">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="w-100 input">
+                    <input type="password" name="password" placeholder="Password">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button class="btn btn-primary w-100 rounded-1" type="submit">LOG IN</button>
+            </form>
+            <hr>
+            <span><i>Or you still not have an account? <a href="#">Sign up</a></i></span>
+        </div>
+    </div>
+
+    <div class="container-fluid p-5 h-100 wrapper">
+        <div class="container-sm p-4 login-signup-form">
+            <h5 class="mb-4"><b>Sign up</b></h5>
+            <button id="google-signup" class="btn border"><i class="fa-brands fa-google float-start"></i>Continue
+                with Google</button>
+                <h6><i>- or -</i></h6>
+                <form>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="firstname" name="firstname" required>
+                    <label for="firstname">First name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="lastname" name="lastname" required>
+                    <label for="lastname">Last name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="date" class="form-control" id="dob" name="dob" required>
+                    <label for="dob">Date of birth</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="username" name="username" required>
+                    <label for="username">Username</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="password" name="password" required> 
+                    <label for="password">Password</label>
+                </div>
+                <button class="btn w-100" type="submit">CONTINUE</button>
+            </form>
+            <hr>
+            <span><i>Already have had an account? <a href="#">Login</a></i></span>
+        </div>
+    </div>
+
+    <!--  -->
+    <footer class="container-fluid p-0">
+        <div class="footer-info">
+            <div class="container-xl p-0">
+                <div class="row gx-5">
+                    <div class="col-3 control">
+                        <h6 class="title">Travel</h6>
+                        <a href="#">Join a trip</a>
+                        <a href="#">Lead a trip</a>
+                        <a href="#">How it works</a>
+                    </div>
+                    <div class="col-3 control">
+                        <h6 class="title">GoSomeone</h6>
+                        <a href="#">About us</a>
+                        <a href="#">Payment</a>
+                    </div>
+                    <div class="col-3 control">
+                        <h6 class="title">Support</h6>
+                        <a href="#">Help & FAQ</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Responsibilities</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container-xl footer-container p-0">
+                <h6>2022&nbsp;<i class="fa-solid fa-at"></i>&nbsp;GOSOMEONE</h6>
+                <div>
+                    <a class="ps-2"><img class="icon" src="./assets/facebook.png"></a>
+                    <a class="ps-2"><img class="icon" src="./assets/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

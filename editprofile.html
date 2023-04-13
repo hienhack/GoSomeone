@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/8a19b96b6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid header header-white">
+        <div class="container-xl header-container p-0">
+            <div class="logo">
+                <a href="/"><img src="./assets/logo_w.png"></a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">join a trip</a>
+                </div>
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">lead a trip</a>
+                </div>
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">how it works</a>
+                </div>
+                <img class="user-icon" src="./assets/user.png">
+            </div>
+        </div>
+    </header>
+    <!--  -->
+    <div class="container-fluid cover-image d-flex align-items-center justify-content-center">
+        <!-- <img src="./assets/homepage-background.jpg"> -->
+        <img id="cover-img">
+        <div class="input-cover-image">
+            <label class="btn" for="input-cover-img">
+                <i class="fa-regular fa-image"></i></br>
+                Change Image
+            </label>
+            <input class="d-none" type="file" id="input-cover-img" accept="image/*" name="cover-img">
+        </div>
+    </div>
+    <div class="container-md p-0 ms-auto me-auto mb-5">
+        <div class="edit-profile">
+            <div class="profile-user">
+                <img id="avatar" src="./assets/profile.png">
+                <h3 class="fw-bolder">Waldez Thai</h3>
+                <button class="change-ava-btn" id="change-ava-btn">
+                    <label for="change-ava"><i class="fa-regular fa-pen-to-square fs-4"></i></label>
+                </button>
+                <input id="change-ava" class="d-none" type="file">
+            </div>
+            <form>
+                <div class="d-flex flex-column gap-3 mt-4 mb-4">
+                    <div class="">
+                        <label class="mb-1">Bio</label>
+                        <input id="bio" type="text">
+                    </div>
+                    <div class="mt-4">
+                        <label class="mb-1">Add Photos</label>
+                        <label id="input-image" class="fw-bold btn" for="input-img"><i
+                                class="fa-solid fa-camera fs-5"></i>&nbsp;UP LOAD</label>
+                        <div id="input-profile-img" class="input-img">
+                            <input id="input-img" accept="image/*" class="d-none" type="file" multiple>
+                            <div class="preview d-none d-flex flex-wrap gap-1 border p-3 mt-3 rounded-1 bg-light">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="">
+                        <label class="mb-1">Profile descriptions</label>
+                        <textarea name="Text1" cols="40" rows="5"></textarea>
+                    </div>
+                    <h6 class="fw-bold mt-4">Questions</h6>
+                    <div class="">
+                        <label class="mb-1">What have you been doing in the past?</label>
+                        <textarea name="Text1" cols="40" rows="3"></textarea>
+                    </div>
+                    <div class="">
+                        <label class="mb-1">What kind of person you are?</label>
+                        <textarea name="Text1" cols="40" rows="3"></textarea>
+                    </div>
+                    <div class="">
+                        <label class="mb-1">What is your favorite?</label>
+                        <textarea name="Text1" cols="40" rows="3"></textarea>
+                    </div>
+                    <div class="">
+                        <label class="mb-1">Your Travel Experience?</label>
+                        <textarea name="Text1" cols="40" rows="3"></textarea>
+                    </div>
+                    <button class="btn-gradient-info d-block m-auto" type="submit">SAVE PROFILE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--  -->
+    <footer class="container-fluid p-0">
+        <div class="footer-info">
+            <div class="container-xl p-0">
+                <div class="row gx-5">
+                    <div class="col-3 control">
+                        <h6 class="title">Travel</h6>
+                        <a href="#">Join a trip</a>
+                        <a href="#">Lead a trip</a>
+                        <a href="#">How it works</a>
+                    </div>
+                    <div class="col-3 control">
+                        <h6 class="title">GoSomeone</h6>
+                        <a href="#">About us</a>
+                        <a href="#">Payment</a>
+                    </div>
+                    <div class="col-3 control">
+                        <h6 class="title">Support</h6>
+                        <a href="#">Help & FAQ</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Responsibilities</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container-xl footer-container p-0">
+                <h6>2022&nbsp;<i class="fa-solid fa-at"></i>&nbsp;GOSOMEONE</h6>
+                <div>
+                    <a class="ps-2"><img class="icon" src="./assets/facebook.png"></a>
+                    <a class="ps-2"><img class="icon" src="./assets/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/standard.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+</body>

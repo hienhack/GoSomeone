@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery-3.6.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/8a19b96b6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid header header-white">
+        <div class="container-xl header-container p-0">
+            <div class="logo">
+                <a href="/"><img src="./assets/logo_w.png"></a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">join a trip</a>
+                </div>
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">lead a trip</a>
+                </div>
+                <div class="navbar-menu-item">
+                    <a class="text" href="#">how it works</a>
+                </div>
+                <img class="user-icon" src="./assets/user.png">
+            </div>
+        </div>
+    </header>
+    <!--  -->
+    <div class="container-fluid cover-image d-flex align-items-center justify-content-center">
+        <img id="cover-img" src="/assets/homepage-background.jpg">
+    </div>
+    <div class="container-md p-0 ms-auto me-auto mb-5">
+        <div class="profile">
+            <div class="profile-user mb-5">
+                
+                <img class="border-white viewable-img" id="avatar" class="d-block" src="data:image/jpeg;base64,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">
+                <div>
+                    <div class="fw-bolder fs-3">Waldez Thai</div>
+                    <span class="text-secondary">Hi I'm Hien Thai abc...</span>
+                </div>
+            </div>
+            <div class="row row-cols-4 g-2 mb-5">
+                <div class="col">
+                    <div class="verify-info border p-2 ps-3 pe-3 rounded-1">
+                        <i class="fa-solid fa-user-check fs-4" style="color: var(--text-success);"></i>
+                        <div class="mt-2 text-secondary">Identity verified</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="verify-info border p-2 ps-3 pe-3 rounded-1">
+                        <i class="fa-solid fa-phone fs-4" style="color: var(--text-success);"></i>
+                        <div class="mt-2 text-secondary">Phone verified</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="verify-info border p-4 ps-3 pe-3 rounded-1 text-center">
+                        <span class="fs-6 fw-bold">5.0</span>
+                        <i class="fa-solid fa-star fs-4 text-warning"></i>
+                    </div>
+                </div>
+            </div>
+            <h5 class="fw-bold mb-3"><i class="fa-solid fa-camera fs-5"></i>&nbsp; Photos</h5>
+
+            <div class="mb-5">
+                <div class="profile-imgs d-flex flex-wrap gap-2">
+                    <img class="viewable-img" src="https://photo-cms-plo.epicdn.me/w850/Uploaded/2022/vocgmvbg/2022_08_14/phuong-nhi-739.jpeg">
+                </div>
+            </div>
+
+
+            <div id="view-profile-img" class="img-view d-none">
+                <button type="button" class="btn-close btn-close-white" aria-label="Close" data-bs-target="#view-profile-img"></button>   
+            </div>
+
+
+            <h5 class="fw-bold mb-3">About</h5>
+            <!-- Profile description -->
+            <div class="mb-5">
+                <p class="fs-8 mb-4">
+                    Description description description description description description ha ah ha
+                    description description description description description description description
+                    description description description description
+                </p>
+                <div class="accordion">
+                    <div id='addition-questions' class="mt-4 mb-4 accordion-collapse collapse">
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <div class="mb-2">
+                                    <span class="fw-bold fs-7">What have you been doing in the past?</span>
+                                </div>
+                                <p class=" fs-8">
+                                    abc abc abc abc abc abc abc abc abc abc abc abc abc
+                                    abc abc abc abc abc
+                                </p>
+                            </div>
+                            <div class="col">
+                                <div class="mb-2">
+                                    <span class="fw-bold fs-7">What kind of person you are?</span>
+                                </div>
+                                <p class=" fs-8">
+                                    abc abc abc abc abc abc abc abc abc abc abc abc abc
+                                    abc abc abc abc abc
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <div class="mb-2">
+                                    <span class="fw-bold fs-7">What is your favorite?</span>
+                                </div>
+                                <p class=" fs-8">
+                                    abc abc abc abc abc abc abc abc abc abc abc abc abc
+                                    abc abc abc abc abc
+                                </p>
+                            </div>
+                            <div class="col">
+                                <div class="mb-2">
+                                    <span class="fw-bold fs-7">Your Travel Experience?</span>
+                                </div>
+                                <p class=" fs-8">
+                                    abc abc abc abc abc abc abc abc abc abc abc abc abc
+                                    abc abc abc abc abc
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="read-more-profile" class="accordion-button collapsed border rounded-1" data-bs-toggle="collapse"
+                        data-bs-target="#addition-questions">
+                        READ MORE&nbsp;
+                    </button>
+                </div>
+            </div>
+            <h5 class="fw-bold mb-3">Joined trips</h5>
+            <div class="row row-cols-3 g-1">
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://qbtravel.vn/wp-content/uploads/2021/06/hang-son-doong-11.jpg">
+                        <div class="card-body">
+                            <div class="destination"><i class="fa-solid fa-location-dot"></i>&nbsp;Destination</div>
+                            <a class="card-title">Trips title title title title title title title title title
+                                title title title title title title title </a>
+                            <div class="date">
+                                <span class="me-2"><i class="fa-regular fa-calendar-days"></i>&nbsp;
+                                    22 DEC 22</span>
+                                <span class="me-2"><i class="fa-regular fa-clock"></i>&nbsp; 7 Days</span>
+                            </div>
+                            <hr />
+                            <div class="price d-flex flex-column">
+                                <div>
+                                    <span class="cost">1.000.000</span>
+                                    <span class="currency">VND</span>
+                                </div>
+                                <div class="unit">per tripmate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <footer class="container-fluid p-0">
+        <div class="footer-info">
+            <div class="container-xl p-0">
+                <div class="row gx-5">
+                    <div class="col-3 control">
+                        <h6 class="title">Travel</h6>
+                        <a href="#">Join a trip</a>
+                        <a href="#">Lead a trip</a>
+                        <a href="#">How it works</a>
+                    </div>
+                    <div class="col-3 control">
+                        <h6 class="title">GoSomeone</h6>
+                        <a href="#">About us</a>
+                        <a href="#">Payment</a>
+                    </div>
+                    <div class="col-3 control">
+                        <h6 class="title">Support</h6>
+                        <a href="#">Help & FAQ</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Responsibilities</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container-xl footer-container p-0">
+                <h6>2022&nbsp;<i class="fa-solid fa-at"></i>&nbsp;GOSOMEONE</h6>
+                <div>
+                    <a class="ps-2"><img class="icon" src="./assets/facebook.png"></a>
+                    <a class="ps-2"><img class="icon" src="./assets/instagram.png"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/standard.js"></script>
+    <link href="/css/style.css" rel="stylesheet">
+</body>

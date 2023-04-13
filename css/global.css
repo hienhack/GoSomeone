@@ -1,0 +1,112 @@
+@import './variables.css';
+
+a:hover {
+    text-shadow: var(--text-hover-shadow);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+span,
+button,
+input,
+input::placeholder,
+p {
+    font-family: 'Inter';
+}
+
+span>i {
+    font-size: 95%;
+}
+
+button {
+    border: 0;
+    height: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 3px;
+    background: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+input {
+    border: none;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+}
+
+label {
+    font-size: 14px;
+}
+
+.fs-7 {
+    font-size: 15px;
+}
+
+.btn-gradient-info {
+    color: white;
+    font-weight: 800;
+    background: linear-gradient(75.24deg, rgba(142, 255, 194, 0.72) -14.59%, rgba(0, 228, 201, 0.84) 116.8%);
+}
+
+.btn-gradient-danger {
+    color: white;
+    font-weight: 800;
+    background: linear-gradient(75.24deg, rgba(255, 107, 0, 0.72) -14.59%, rgba(239, 77, 125, 0.84) 116.8%);
+}
+
+.btn-gradient-danger:hover, .btn-gradient-info:hover {
+    outline: 1px solid rgba(182, 252, 243, 0.58);
+}
+
+button:hover {
+    outline: 5px solid rgba(182, 252, 243, 0.58);
+}
+
+.btn:hover {
+    outline: 1px solid black;
+}
+
+#avatar {
+    object-fit: cover;
+}
+
+.border-white {
+    border-color: white !important; 
+}
+
+.fs-8 {
+    font-size: 14px;
+}
+
+.text-success {
+    color: var(--text-success) !important;
+}
